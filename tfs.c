@@ -269,7 +269,7 @@ int writei(uint16_t ino, struct inode *inode) {
 #  	Step 2: Get data block of current directory from inode																		#
 #  	Step 3: Read directory's data block and check each directory entry.															#
 #																															    #	
-#  	Note: If the name matches, then copy directory entry to dirent structure													#
+#																															    #	
 #																															    #	
 #################################################################################################################################
 */
@@ -440,7 +440,6 @@ int dir_remove(struct inode dir_inode, const char *fname, size_t name_len) {
 #	int get_node_by_path(const char *path, uint16_t ino, struct inode *inode) 													#
 #																																#
 #	Step 1: Resolve the path name, walk through path, and finally, find its inode.												#
-#	Note: You could either implement it in a iterative way or recursive way														#
 #																																#
 #################################################################################################################################
 */
