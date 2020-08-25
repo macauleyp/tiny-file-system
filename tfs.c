@@ -1,14 +1,3 @@
-/*
- *  Copyright (C) 2019 CS416 Spring 2019
- *	
- *	Tiny File System
- *
- *	File:	tfs.c
- *  Author: Yujie REN
- *	Date:	April 2019
- *             
- */
-
 #define FUSE_USE_VERSION 26
 
 #include <fuse.h>
