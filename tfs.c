@@ -17,7 +17,7 @@
 
 char diskfile_path[PATH_MAX];
 
-// Declare your in-memory data structures here
+
 
 bitmap_t ibmap = NULL;
 bitmap_t dbmap = NULL;
