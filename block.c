@@ -1,14 +1,3 @@
-   /*
- *  Copyright (C) 2019 CS416 Spring 2019
- *	
- *	Tiny File System
- *
- *	File:	block.c
- *  Author: Yujie REN
- *	Date:	April 2019
- *
- */
-
 #include <fcntl.h>
 #include <stdlib.h>
 #include <string.h>
