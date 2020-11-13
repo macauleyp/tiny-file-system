@@ -40,7 +40,7 @@ This is a User-Level File System library that build on top of the kernel module 
 # File System API 
 The User-Level file system works in 5 parts which are defined below.
 
-## Block I/O Layer
+### Block I/O Layer
 Read a block at ```block_num``` from the flat file (the virtual disk)  to ```buf```
 ```C 
 int bio_read(const int block_num, void *buf);
@@ -51,7 +51,7 @@ Write a block at ```block_num``` from ```buf``` to the flat file (the virtual di
 int bio_write(const int block_num, void *buf);
 ```
 
-## Bitmap
+### Bitmap
 Set the i-th bit of bitmap ```b```
 ```C
 set_bitmap(bitmap_t b, int i);
@@ -77,7 +77,7 @@ Traverses the data block bitmap to find an available data block, and sets this d
 int get_avail_blkno();
 ```
 
-# iNode
+### iNode
 
 Reads the given inode number from the respective on-disk inode which is mapped to an inode area of the flat file (the virtual disk) to an in-memory inode (```struct inode```)
 ```C 
@@ -89,7 +89,7 @@ Writes the in-memory inode struct to a disk inode into the inode area of the fla
 int writei(uint16_t ino, struct inode *inode);
 ```
 
-# Directory and namei
+### Directory and namei
 
 Using the given inode number along with the current directory, the file name or sub-directory and its length, the function reads all direct entries of the current directory to see if the intended file or sub-directory exists. If it does exist, the parameters are loaded into ```struct direct *dirent```
 ```C
@@ -111,7 +111,7 @@ A namei function that follows a pathname till a terminal point is found from the
 int get_node_by_path(const char *path, uint16_t ino, struct inode *inode);
 ```
 
-# FUSE-based File System Handlers
+### FUSE-based File System Handlers
 
 Initialization function for the 'Tiny' File System which will open a flat file (the virtual disk) and reads a super block into memory. If the flat file does not exist (the virtual disk is not formatted), then it will call ```tfs_mkfs()``` to format the virtual disk which partitions the flat file into a superblock, inode, bitmap, and data block region. Furthermore, memory is allocation for the file system data structures.  
 ```C 
