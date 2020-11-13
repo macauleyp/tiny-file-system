@@ -25,7 +25,10 @@ This is a User-Level File System library that build on top of the kernel module 
 
 | Function Name | Return Value | Description |
 |--|--|--|
-| ```C int creat(const char *path, mode_t mode);``` | File descriptor | Creates a file |
+| 
+```C 
+int creat(const char *path, mode_t mode);
+``` | File descriptor | Creates a file |
 | ```ssize_t write(int fd, const void *buf, size_t count);``` | Number of bytes written | Writes to the given file descriptor |
 |```int open(const char *pathname, int flags);```| 0 on success, or -1 on failure | Open a file for reading |
 |```ssize_t read(int fd, void *buf, size_t count);```| Number of Bytes Read | Read from the given file descriptor |
