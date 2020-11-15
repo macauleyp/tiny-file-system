@@ -1,6 +1,6 @@
 # A 'Tiny' File System (TFS)  with FUSE Library
 
-This is a User-Level File System library that build on top of the kernel module FUSE (version 26) to redirect system calls to the User-Level file system. Thus, the program initializes a virtual disk and provides file abstraction by logically fetching disk segments.
+This is a User-Level File System library that builds on top of the kernel module FUSE (version 26) to redirect system calls to the User-Level file system. Thus, the program initializes a virtual disk and provides file abstraction by logically fetching disk segments.
 
 # Using the TFS Library
 
