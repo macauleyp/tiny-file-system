@@ -106,7 +106,7 @@ Removes a directory from the given current directory inode and the sub-directory
 int dir_remove(struct inode dir_inode, const char *fname, size_t name_len);
 ```
 
-A namei function that follows a pathname till a terminal point is found from the given path and the root inode number of the path. The funvtion calls ```int dir_find()``` to look up each path component before finally reading the inode of the terminal point into ```struct inode *inode```.
+A namei function that follows a pathname till a terminal point is found from the given path and the root inode number of the path. The function calls ```int dir_find()``` to look up each path component before finally reading the inode of the terminal point into ```struct inode *inode```.
 ```C
 int get_node_by_path(const char *path, uint16_t ino, struct inode *inode);
 ```
