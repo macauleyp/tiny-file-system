@@ -1,6 +1,6 @@
 # A 'Tiny' File System (TFS)  with FUSE Library
 
-This is a User-Level File System library that builds on top of the kernel module FUSE (version 26) to redirect system calls to the User-Level file system. Thus, the program initializes a virtual disk and provides file abstraction by logically fetching disk segments.
+This is a User-Level File System library that builds on top of the kernel module FUSE (version 26) to redirect system calls to the User-Level File System. Thus, the program initializes a virtual disk and provides file abstraction by logically fetching disk segments.
 
 # Using the TFS Library
 
@@ -14,7 +14,7 @@ This is a User-Level File System library that builds on top of the kernel module
 	- ```> findmnt``` 
 		- If mounted successfully, you could see the following:
 			- ```/tmp/<username>/mountdir tfs fuse.tfs rw,nosuid,nodev,relatime,...```
-4. File system Library Commands
+4. File System Library Commands
 	- Most standard command-line file system commands are supported such as:
 	- ```> cd```
 	- ```> touch```
