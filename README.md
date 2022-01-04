@@ -31,7 +31,7 @@ This is a User-Level File System library that builds on top of the kernel module
 |```ssize_t read(int fd, void *buf, size_t count);```| Number of Bytes Read | Read from the given file descriptor |
 |```int unlink(const char *pathname);```| 0 on success, or -1 on failure | Deletes a name from the file system |
 |```int mkdir(const char *pathname, mode_t mode);```| 0 on success, or -1 on failure | Creates a directory |
-|```DIR *opendir(const char *name);``` | A pointer to the directory stream on success, or ```NULL``` on failure | Opens the given directory the stream |
+|```DIR *opendir(const char *name);``` | A pointer to the directory stream on success, or ```NULL``` on failure | Opens the given directory stream |
 | ```int rmdir(const char *pathname);``` | 0 on success, or -1 on failure | Deletes a directory which must be empty |
 
 6. Exit and Unmount TFS
